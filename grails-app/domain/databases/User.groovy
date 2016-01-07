@@ -21,4 +21,6 @@ class User {
         posts sort: "dateCreated", order: "desc"
     }
 
+    String toString() { return "User $loginId (id: $id)" }
+    String getDisplayString() { return loginId }
 }
