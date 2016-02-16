@@ -1,6 +1,8 @@
 package databases
 
 import spock.lang.*
+import grails.test.mixin.TestFor
+import grails.test.mixin.Mock
 
 @TestFor(UrlMappings)
 @Mock(PostController)
