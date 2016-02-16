@@ -10,6 +10,7 @@ class Profile {
     String timezone
     String country
     String jabberAddress
+    static belongsTo = [ user: User ]
 
     static constraints = {
         fullName blank: false
