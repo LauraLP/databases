@@ -25,7 +25,7 @@ class PostController {
         if (user) {
             def post = new Post(params)
             user.addToPosts(post)
-            if (user.save()) {
+            if (user.save(flush:true)) {
                 flash.message = "Successfully created Post"
             } else {
                 flash.message = "Invalid or empty post"
