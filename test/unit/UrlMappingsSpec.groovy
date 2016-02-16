@@ -1,5 +1,4 @@
-package databases
-
+import databases.PostController
 import spock.lang.*
 import grails.test.mixin.TestFor
 import grails.test.mixin.Mock
